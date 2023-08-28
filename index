@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esercitazione precorso 2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+        body {
+            margin: 15% 15%;
+            background-color: #fff;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        label {font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+font-size: 14px;}
+
+        input {
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        input[type="checkbox"] {
+            width: 10%;
+        }
+
+        input[type="submit"] {
+            margin: 30px auto;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 10px;
+        }
+        input[type="submit"]:hover {
+            margin: 30px auto;
+            font-family: 'Roboto Mono', monospace;
+            background-color: #0cf049;
+            border: 2px solid #000;
+            padding: 10px;
+        }
+
+        #titolopagina {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 700;
+            font-size: 40px;
+            color: #0cf049;
+        }
+
+        .titolosezione {
+            font-family: 'Roboto Mono', monospace;
+            text-align: right;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="none">
+        <p id="titolopagina">Iscrizione a livemusic demo.</p>
+        <p class="titolosezione">_Dati personali</p>
+        <fieldset>
+            <label>Nome <input type="text" name="name" required /></label>
+            <label>Cognome <input type="text" name="cognome" required /></label>
+            <label>Data di nascita <input type="date" name="datadinascita" /></label>
+            <label>Numero di cellulare <input type="number" name="numerodicellulare" required /></label>
+        </fieldset>
+        <br>
+        <p class="titolosezione">_Dati account</p>
+        <fieldset>
+            <label>Email<input type="email" name="email" required /></label><br>
+            <label>Password<input type="password" name="cognome" required /></label>
+            <label>Ripeti Password<input type="ripetipassword" name="ripetipassword" required /></label>
+        </fieldset>
+        <fieldset>
+            <p class="titolosezione">_Quali sono i tuoi gusti musicali?</p>
+            <label>
+                <br><input type="checkbox" name="elettronica" />Elettronica
+                <br><input type="checkbox" name="dance" />Dance
+                <br><input type="checkbox" name="hiphop" />Hip Hop
+                <br><input type="checkbox" name="classica" />Classica
+                <br><input type="checkbox" name="Jazz" />Jazz
+                <br><input type="checkbox" name="altrigeneri" />Altri generi
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html
